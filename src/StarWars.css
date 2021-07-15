@@ -1,3 +1,30 @@
 .searchResults{
     text-decoration: underline;
 }
+
+.userInput{
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+}
+
+.userInput:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+
+button {
+    height: 2.5em;
+    padding: 1.5em auto;
+    margin: 1em auto;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
+   
+  }

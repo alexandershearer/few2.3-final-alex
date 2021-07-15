@@ -71,16 +71,17 @@ function StarWars(props) {
             >
                 <div>
                     <input
+                        className='userInput'
                         placeholder="Enter Character ID"
                         value={charId}
                         onChange={e => setCharId(e.target.value)}
                     />
-                    <button type="submit">Submit</button>
+                    <button className='submitButton' type="submit">Submit</button>
                 </div>
             </form>
             <h1 className='searchResults'>Search Results</h1>
             {info && <CharInfo {...info} />}
-            {info && <button onClick={() => addChar(info)}>Save</button>}
+            {info && <button className='saveButton' onClick={() => addChar(info)}>Save</button>}
             <h1>Saved Characters</h1>
             <CharList savedChar={savedChar} />
         </div>
